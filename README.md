@@ -18,37 +18,37 @@ See https://github.com/secomb/GreensV4 for more details on Green's function meth
 **IntravascRes.dat** Specifies intravascular resistance to solute transport from blood to tissue. For oxygen, this depends on the vessel diameter. For other solutes, a wall permeability is specified by the file.  
 **RheolParams.dat** This file gives parameters for equations to describe the apparent viscosity of blood in microvessels in vivo as a function of vessel diameter and discharge hematocrit, and the partition of hematocrit in diverging bifurcations, as a function of the flow rates in the branches, the diameters of the branches, and the hematocrit arriving at the parent vessel. Set varyviscosity = 1 to get diameter-dependent viscosity. Set phaseseparation = 1 to compute phase separation in diverging bifurcations. This can lead to noncTonvergence of the method in some cases. Also, the number of iterations for linear and nonlinear loops are specified. These may need to be increased for very large networks.  
 **AngioParams.dat**  This file gives the values of parameters associated with angiogenesis and vessel migration, including:
-probability of sprout formation 
-maximum number of new sprouts per time step 
-Vmax, um/day rate of growth 
-threshold GF concentration for sprout formation 
-variance, gives the amount of wiggle in direction of new growth 
-diameter_of_new_vessels 
-parameters in threshold function for sprouting probability 
-strength of responses to gradients in GF 
-strength of signal from cone detector (guidance to other vessels) 
-threshold for movement under tension 
-rate of node movement under tension 
-seed for randomization 
-cutoff radius for cone detector	
-cutoff angle for cone detector 
-top of the Inner Nuclear Layer 
-bottom of INL 
-increased GF production in INL, decreased production below INL 
-include hexagonal "astrocyte" guidance, side of hexagon, strength of signal from hexagon 
-include retinal thickening, no. of time steps, amount (micron) per time step 
-thickness of photoreceptor layer, increase in O2 demand in photoreceptor layer  
+probability of sprout formation  
+maximum number of new sprouts per time step  
+Vmax, um/day rate of growth  
+threshold GF concentration for sprout formation  
+variance, gives the amount of wiggle in direction of new growth  
+diameter of new_vessels 
+parameters in threshold function for sprouting probability  
+strength of responses to gradients in GF  
+strength of signal from cone detector (guidance to other vessels)  
+threshold for movement under tension  
+rate of node movement under tension  
+seed for randomization  
+cutoff radius for cone detector 	
+cutoff angle for cone detector  
+top of the Inner Nuclear Layer  
+bottom of INL  
+increased GF production in INL, decreased production below INL   
+include hexagonal "astrocyte" guidance, side of hexagon, strength of signal from hexagon   
+include retinal thickening, no. of time steps, amount (micron) per time step  
+thickness of photoreceptor layer, increase in O2 demand in photoreceptor layer    
 **AdaptParams.dat** This file gives the values of parameters associated with structural adaptation and pruning, including: 
-number of adaptation/angiogenesis time steps 
-time step, day 
-parameters for pressure-shear relationship 
-overall strength of metabolic signal 
-max. upstream response relative to downstream 
-saturation levels for downstream and upstream responses, um 
+number of adaptation/angiogenesis time steps  
+time step, day  
+parameters for pressure-shear relationship  
+overall strength of metabolic signal  
+max. upstream response relative to downstream  
+saturation levels for downstream and upstream responses, um  
 shrinking tendency   
-conducted response decay length 
-diameter threshold for dropout 
-adaptation time scale 
+conducted response decay length  
+diameter threshold for dropout  
+adaptation time scale  
 
 **Output files**
 
