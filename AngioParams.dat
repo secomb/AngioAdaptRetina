@@ -1,0 +1,29 @@
+0.2 		smax, prob of sprout formation = smax*thresh*segment_length*timestep, 0.2
+160			nsprmax, maximum number of new sprouts per time step (160)
+333.		Vmax, um/day rate of growth ~20 (50.)
+5.			min_length, if length < min_length, no growth
+0.7		thresh, threshold concentration for sprout formation, ~1 nM. (0.8)
+0.1		variance, gives the amount of wiggle in direction of new growth (0.1 default)(0.4)
+8.			new_diam, diameter_of_new_vessels (10.)
+11.			increment, amount seg increments by then checks for intercept. Should be > tolerance_1 to avoid spurious intercepts
+10.			tolerance_1, if closest point on another seg within this distance=>intercept at point (10)
+10.			tolerance_2, if increments to within this distance of new_point, stops incrementing (10)
+1.	0.5		threshn, thresh50, threshold function (GF-thresh)^n/(thresh50^n+(GF-thresh)^n)
+0.			kgGF, strength of responses to gradients in GF
+1.			kv, strength of signal from cone detector (1.)
+0.25		lambdatension, threshold for movement under tension (0.15)
+80.			tensionrate, rate of node movement under tension (1.)
+10111		seed (seed = 1 uses current time) (10111)(85711)(314159)(754323)  (57721)(101010)(271828)(654321)  (1326)(1527)(2716)(3300)
+40.			r0, cutoff radius for cone detector, um (50)(default: 100)	
+1.047		theta0, cutoff angle for cone detector (default: pi/3 = 1.047)(2/3pi = 2.094)
+1			angio3d, 0 for 2D angiogenesis, 1 for 3D angiogenesis
+1			hexperiodic - hexagonal periodic boundary conditions in x-y plane (currently 3D only)
+155.		INLzonetop, top of the Inner Nuclear Layer
+105.		INLzonebottom, bottom of INL
+0.			INLzoneforce, force used to keep vessels in INL
+20.			INLzonedecay, decay of force used to keep vessels in INL
+1.  1.		INLGFfac, ONLGFfac, increased GF production in INL, decreased production below INL
+0 43.75 20.	dohexflag, ahex, khex: include hexagonal "astrocyte" guidance, side of hexagon, strength of signal from hexagon
+0 100 1	thicken, nthicken, dthicken: include retinal thickening, no. of time steps, amount (micron) per time step
+0			IVPstart, no. time steps before IVP signal is turned on
+75. 2.		recepTop, recepFac, thickness of photoreceptor layer, increase in O2 demand in photoreceptor layer
